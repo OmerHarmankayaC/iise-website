@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#725c00",
+                    "on-secondary-fixed-variant": "#564500",
+                    "on-tertiary-fixed-variant": "#6d3642",
+                    "primary-container": "#0027ba",
+                    "tertiary-fixed-dim": "#feb2c0",
+                    "error": "#ba1a1a",
+                    "outline": "#757686",
+                    "on-primary": "#ffffff",
+                    "background": "#faf8ff",
+                    "surface-container": "#ebedff",
+                    "secondary-fixed-dim": "#ecc200",
+                    "secondary-container": "#fdd000",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#faf8ff",
+                    "outline-variant": "#c5c5d7",
+                    "on-background": "#0d193f",
+                    "on-error": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#faf8ff",
+                    "inverse-surface": "#232e55",
+                    "inverse-on-surface": "#eff0ff",
+                    "secondary-fixed": "#ffe07c",
+                    "tertiary-fixed": "#ffd9df",
+                    "tertiary-container": "#642f3b",
+                    "primary": "#001881",
+                    "surface-container-high": "#e4e7ff",
+                    "on-primary-fixed-variant": "#1332c1",
+                    "on-secondary": "#ffffff",
+                    "surface-tint": "#364ed9",
+                    "tertiary": "#491926",
+                    "on-surface-variant": "#444654",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed-dim": "#bbc3ff",
+                    "inverse-primary": "#bbc3ff",
+                    "surface-container-highest": "#dce1ff",
+                    "on-secondary-fixed": "#231b00",
+                    "error-container": "#ffdad6",
+                    "on-secondary-container": "#6e5900",
+                    "primary-fixed": "#dee0ff",
+                    "on-primary-fixed": "#000f5d",
+                    "surface-variant": "#dce1ff",
+                    "on-tertiary-fixed": "#370b18",
+                    "surface-container-low": "#f3f2ff",
+                    "surface-dim": "#d1d8ff",
+                    "on-primary-container": "#97a5ff",
+                    "on-surface": "#0d193f",
+                    "on-tertiary-container": "#e098a5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        .ghost-border {
+            outline: 1px solid rgba(197, 197, 215, 0.15);
+        }
+        .ghost-border:hover {
+            outline: 1px solid rgba(0, 24, 129, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-none docked full-width top-0 sticky z-50">
+<nav class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold tracking-tighter text-blue-900 dark:text-white font-headline">
+                IISE TEDU
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-800 dark:hover:text-blue-300 transition-colors duration-200 text-sm font-medium font-inter" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-800 dark:hover:text-blue-300 transition-colors duration-200 text-sm font-medium font-inter" href="#">About</a>
+<a class="text-blue-700 dark:text-blue-400 border-b-2 border-blue-700 dark:border-blue-400 pb-1 text-sm font-medium font-inter" href="#">Benefits</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-800 dark:hover:text-blue-300 transition-colors duration-200 text-sm font-inter">
+                    EN/TR
+                </button><button class="bg-secondary-container text-on-secondary-container px-5 py-2 text-sm font-bold tracking-tight rounded-lg hover:opacity-80 transition-all active:scale-95">
+                    Apply Now
+                </button>
+<img alt="TED University Logo" class="w-8 h-8 object-contain" data-alt="Official logo of TED University featuring sharp architectural lines and academic heraldry in a minimalist style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDmBecSvu3R_0kQh3t7mWAYtgdMyqN_5yGW8VU9Jqb1_kY3Xo10TK3mg6LsLVSzVEtq_sPKVL6xjDWhKH1mC6sK8RPmPWwDOIrkt-GUBZKNbxfYPJqtjPX-UXiJA3dvnHx0n4Gs8ezGcvDlg689M8Rn4OyPSDGsHjWAvSjo4G_OwL_YtnSixDrHOY1vQ_teMGucNE9NfoP701JkiTYeP9tKL3pafes5hF5ClZdIcuKLNqGDxh82gRZmaCBmw87bCe953q8Rfe-vMxC"/>
+</div>
+</nav>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-16 md:py-24">
+<!-- Hero Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end mb-24">
+<div class="lg:col-span-8">
+<span class="inline-block px-3 py-1 bg-secondary-fixed text-on-secondary-fixed text-xs font-bold tracking-widest uppercase rounded-full mb-6 font-label">
+                    Empowering Future Engineers
+                </span>
+<h1 class="text-5xl md:text-7xl font-headline font-bold tracking-tighter leading-[0.95] text-primary mb-8">
+                    Elevate Your Professional <br/>Trajectory.
+                </h1>
+<p class="text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+                    Membership in the IISE Student Chapter at TED University provides a structured gateway to global industrial engineering excellence and foundational leadership roles.
+                </p>
+</div>
+<div class="lg:col-span-4 flex justify-start lg:justify-end">
+<div class="p-8 bg-surface-container-highest rounded-xl relative overflow-hidden group">
+<div class="relative z-10">
+<div class="text-4xl font-headline font-bold text-primary mb-2">4,000+</div>
+<div class="text-sm font-label uppercase tracking-widest text-on-surface-variant">Global Peer Network</div>
+</div>
+<div class="absolute -right-4 -bottom-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<img alt="IISE Logo" class="w-32 h-32" data-alt="Geometric secondary brand mark representing industrial systems and interconnectivity with clean navy blue lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjR-dj-lyoW9Pk2ZYEePnHL0Xf28sDZpfBnIk3pIPylk173cX2mQLQ7tLzeUJaJTGlf036R19R4vqu1EAMUfYjag6TDHntcyAeSL7NpNvbBcFahUEGlHvsUYEHCvPuwS15rPmsStseRm5USzjJ9OvnmLQVh9KPVsKR-RLw4cOuc6MqDotDqgIaFlnGUeGwd8t9ASGsPv70ZJbIObZT3O-vWwTK_PYb9EaR3bHg5w5exVvYXdxxE7q2QVpVkH-KiDi8FoP_-xTNOxYL"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Benefits Grid -->
+<section class="mb-32">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-12 gap-4">
+<h2 class="text-3xl font-headline font-bold tracking-tight text-primary">Core Membership Pillars</h2>
+<div class="h-px flex-grow mx-8 bg-outline-variant/30 hidden md:block"></div>
+<p class="text-sm font-label text-on-surface-variant uppercase tracking-widest">Architecting Innovation</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Benefit Card 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-lg ghost-border transition-all flex flex-col h-full">
+<div class="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+</div>
+<h3 class="text-xl font-headline font-bold mb-4">Global Intelligence</h3>
+<p class="text-on-surface-variant mb-8 flex-grow">
+                        Direct access to IISE's flagship magazines and exclusive webinars featuring world-renowned industrial engineers.
+                    </p>
+<div class="pt-6 border-t border-outline-variant/20 flex justify-between items-center group cursor-pointer">
+<span class="text-xs font-bold uppercase tracking-wider text-primary">View Resources</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Benefit Card 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-lg ghost-border transition-all flex flex-col h-full">
+<div class="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+</div>
+<h3 class="text-xl font-headline font-bold mb-4">Industry Synergy</h3>
+<p class="text-on-surface-variant mb-8 flex-grow">
+                        Bridge the gap between academia and industry through networking events with top-tier corporate professionals.
+                    </p>
+<div class="pt-6 border-t border-outline-variant/20 flex justify-between items-center group cursor-pointer">
+<span class="text-xs font-bold uppercase tracking-wider text-primary">Explore Network</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Benefit Card 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-lg ghost-border transition-all flex flex-col h-full">
+<div class="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined" data-icon="military_tech">military_tech</span>
+</div>
+<h3 class="text-xl font-headline font-bold mb-4">Leadership Tracks</h3>
+<p class="text-on-surface-variant mb-8 flex-grow">
+                        Opportunities to join the founding chapter team, steering the direction of IISE within the TED University ecosystem.
+                    </p>
+<div class="pt-6 border-t border-outline-variant/20 flex justify-between items-center group cursor-pointer">
+<span class="text-xs font-bold uppercase tracking-wider text-primary">Join Leadership</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Benefit Card 4 (Double Wide for prominence) -->
+<div class="md:col-span-2 bg-primary-container text-on-primary p-10 rounded-lg flex flex-col md:flex-row gap-8 items-center overflow-hidden relative">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-[120px]" data-icon="settings_suggest">settings_suggest</span>
+</div>
+<div class="relative z-10 flex-1">
+<h3 class="text-2xl font-headline font-bold mb-4">Professional Skill Certification</h3>
+<p class="text-on-primary-container text-lg leading-relaxed mb-6">
+                            Master Lean Six Sigma methodologies and Supply Chain management through practical workshops and recognized credentialing programs.
+                        </p>
+<div class="flex gap-4">
+<span class="bg-white/10 px-3 py-1 rounded text-xs font-medium backdrop-blur-sm">LEAN</span>
+<span class="bg-white/10 px-3 py-1 rounded text-xs font-medium backdrop-blur-sm">SIX SIGMA</span>
+<span class="bg-white/10 px-3 py-1 rounded text-xs font-medium backdrop-blur-sm">SUPPLY CHAIN</span>
+</div>
+</div>
+<div class="relative z-10">
+<button class="bg-secondary-container text-on-secondary-container px-8 py-4 font-bold rounded shadow-lg hover:scale-105 transition-transform">
+                            Enroll in Workshop
+                        </button>
+</div>
+</div>
+<!-- Secondary Brand Mark Container -->
+<div class="bg-surface-container-low p-8 rounded-lg flex items-center justify-center border border-dashed border-outline-variant/40">
+<img alt="IISE Branding" class="max-w-[180px] h-auto grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500" data-alt="High-resolution secondary branding mark for IISE chapter featuring industrial cogs and academic shield in deep navy and gold accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDW31jvu1KzVy-km27l-DVCf5APlzw9qjU9uvdfuNCaVLRnhjeN4kCpy8W16WHydNpI1FxvTDXt-cD1z6Y4xORgehqadt5th0kf5bX7ZCvk5SMKM-5D-IGoUrri10FsDCyJJaPKCkP3mJmTgMki3CYMHQ_ktDlRxOPXrwhYqgv9UL0G8rnLsvG6Iaz5P1TBaV9CuQNEuKTAC1Yxka5aBfsEM8AYEHblwcXqLQcbpVek7iOHGQTAgyWx972COPmkEzOUkGBcd_DEXI_u"/>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-surface-container-low rounded-xl p-12 md:p-20 text-center relative overflow-hidden">
+<div class="relative z-10 max-w-3xl mx-auto">
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-primary mb-6">Ready to Lead the Future?</h2>
+<p class="text-on-surface-variant text-lg mb-10">
+                    Join a prestigious circle of engineers dedicated to efficiency, innovation, and global systems optimization. Applications for the academic cycle are now open.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary px-10 py-4 text-on-primary font-bold rounded-lg shadow-xl shadow-primary/20 hover:bg-primary-container transition-colors">
+                        Become a Member
+                    
+</button><button class="bg-surface-container-lowest px-10 py-4 text-primary font-bold rounded-lg ghost-border transition-all">
+                        Download Prospectus
+                    </button>
+</div>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#001881 1px, transparent 1px); background-size: 24px 24px;"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 w-full py-12 px-6 flex flex-col items-center gap-8 border-t border-slate-200 dark:border-slate-800 relative">
+<div class="text-lg font-bold text-blue-900 dark:text-white font-headline">IISE STUDENT CHAPTER</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-200 transition-colors text-xs uppercase tracking-widest font-inter" href="#">Contact</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-200 transition-colors text-xs uppercase tracking-widest font-inter" href="#">Instagram</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-200 transition-colors text-xs uppercase tracking-widest font-inter" href="#">LinkedIn</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-200 transition-colors text-xs uppercase tracking-widest font-inter" href="#">TEDU Portal</a>
+</div>
+<div class="text-slate-500 dark:text-slate-400 text-sm text-center max-w-md font-body">
+            © 2024 IISE Student Chapter at TED University. Engineering for a better world. / Mühendislik ile daha iyi bir dünya için.
+        </div>
+</footer>
+</body></html>
