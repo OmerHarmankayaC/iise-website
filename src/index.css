@@ -24,6 +24,10 @@
   --radius-sm: 4px;
   --radius-md: 10px;
   --radius-lg: 16px;
+
+  /* Responsive Spacing */
+  --section-padding: clamp(3rem, 8vw, 6rem);
+  --container-padding: clamp(1rem, 5vw, 2rem);
 }
 
 
@@ -47,9 +51,9 @@ a { text-decoration: none; color: inherit; }
 
 button { cursor: pointer; border: none; background: none; font-family: var(--font-ui); }
 
-section { padding: 6rem 0; }
+section { padding: var(--section-padding) 0; }
 
-.container { width: 100%; max-width: 1260px; margin: 0 auto; padding: 0 2rem; }
+.container { width: 100%; max-width: 1260px; margin: 0 auto; padding: 0 var(--container-padding); }
 
 /* Global Buttons */
 .btn {
